@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>305Injured — Miami's Injury Attorneys</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Gilroy via CDN (Light + ExtraBold free weights) -->
+  <link href="https://fonts.cdnfonts.com/css/gilroy-free" rel="stylesheet" />
+  <!-- Plus Jakarta Sans fills in mid-weights Gilroy Free doesn't cover -->
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════
+       NAVBAR
+  ══════════════════════════════════════ -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="#" class="logo">
+        <span class="logo-305">305</span><span class="logo-injured">INJURED</span>
+      </a>
+      <div class="nav-links">
+        <a href="#testimonials">Stories</a>
+        <a href="#about">Our Team</a>
+        <a href="tel:+13055648733" class="nav-cta">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="display:inline;vertical-align:middle;margin-right:5px;"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11.5 19.79 19.79 0 01.12 2.82 2 2 0 012.11 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>(305) 564-8733
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ══════════════════════════════════════
+       HERO — Full-screen Miami video
+  ══════════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="video-wrap">
+      <!-- Place your Miami.mp4 in /assets/miami.mp4 -->
+      <video autoplay muted loop playsinline class="bg-video" poster="assets/miami-poster.jpg">
+        <source src="assets/hero.mp4" type="video/mp4" />
+      </video>
+      <div class="video-overlay"></div>
+    </div>
+
+    <div class="hero-content">
+
+      <!-- Google review — no box, just inline -->
+      <div class="hero-review">
+        <svg viewBox="0 0 24 24" width="20" height="20" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0">
+          <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+          <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+          <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/>
+          <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+        </svg>
+        <span class="review-stars">★★★★★</span>
+        <span class="review-score">4.9</span>
+        <span class="review-text">680+ Google Reviews</span>
+      </div>
+
+      <!-- Headline — 3 lines -->
+      <h1 class="hero-headline">
+        Miami Personal Injury<br />
+        Lawyer Who Fights<br />
+        <span class="headline-red">So You Don't Have To.</span>
+      </h1>
+
+      <!-- Address + phone -->
+      <div class="hero-meta">
+        <a href="https://maps.google.com/?q=10750+NW+6th+Ct+Suite+103+Miami+FL+33168" target="_blank" class="hero-meta-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          10750 NW 6th Ct Suite 103, Miami, FL 33168
+        </a>
+        <span class="hero-meta-dot">·</span>
+        <a href="tel:+13055648733" class="hero-meta-item hero-phone-inline">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11.5 19.79 19.79 0 01.12 2.82 2 2 0 012.11 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+          (305) 564-8733
+        </a>
+      </div>
+
+      <!-- Subheadline — matches headline width, wraps naturally -->
+      <p class="hero-sub">
+        You didn't ask for this. But now everything's changed: your health, your income, your future. At 305Injured, we take on the legal battle so you can focus on healing.
+      </p>
+
+      <!-- CTAs -->
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-hero-primary">
+          Tell Us What Happened &nbsp;→
+        </a>
+        <a href="tel:+13055648733" class="btn btn-hero-outline">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11.5 19.79 19.79 0 01.12 2.82 2 2 0 012.11 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+          Call a Lawyer Now
+        </a>
+      </div>
+
+      <div class="hero-fee-guarantee">
+        <img src="assets/zero-unless-we-win.png" alt="$0 Unless We Win. No fee unless we win your case." class="hero-fee-img" />
+      </div>
+
+      <!-- Trust badges with symbols -->
+      <div class="hero-badges">
+        <div class="trust-badge">
+          <span class="tbadge-icon">⚖️</span>
+          <span class="tbadge-num">$200M+</span>
+          <span class="tbadge-label">Recovered for Clients</span>
+        </div>
+        <div class="trust-badge">
+          <span class="tbadge-icon">🏠</span>
+          <span class="tbadge-num">15,000+</span>
+          <span class="tbadge-label">Families Helped</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       AS SEEN ON
+  ══════════════════════════════════════ -->
+  <section class="seen-on">
+    <p class="seen-label">AS SEEN ON</p>
+    <div class="logos-track">
+      <div class="logos-inner">
+
+        <!-- NBC -->
+        <div class="logo-item">
+          <svg viewBox="0 0 96 32" height="30" xmlns="http://www.w3.org/2000/svg">
+            <g transform="translate(14,16)">
+              <path d="M0,0 C-3,-6 -5,-13 -1,-15 C3,-13 4,-6 0,0Z" fill="#E31837"/>
+              <path d="M0,0 C5,-5 10,-9 13,-6 C11,-2 6,1 0,0Z" fill="#F79421"/>
+              <path d="M0,0 C7,-1 13,2 12,6 C8,7 3,4 0,0Z" fill="#009A44"/>
+              <path d="M0,0 C5,5 7,11 4,14 C1,12 -1,7 0,0Z" fill="#0089CF"/>
+              <path d="M0,0 C-3,6 -7,11 -11,8 C-9,4 -5,1 0,0Z" fill="#6B2D8B"/>
+              <path d="M0,0 C-8,2 -13,-1 -12,-5 C-8,-6 -4,-3 0,0Z" fill="#C8102E"/>
+            </g>
+            <circle cx="14" cy="16" r="3.5" fill="rgba(255,255,255,0.15)"/>
+            <text x="33" y="22" font-family="'Arial Black',Arial,sans-serif" font-weight="900" font-size="16" fill="currentColor" letter-spacing="0.5">NBC</text>
+          </svg>
+        </div>
+
+        <!-- Fox News -->
+        <div class="logo-item">
+          <svg viewBox="0 0 138 32" height="30" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0" y="1" width="64" height="30" rx="3" fill="#003087"/>
+            <text x="7" y="23" font-family="'Arial Black',Arial,sans-serif" font-weight="900" font-size="19" fill="#fff" letter-spacing="1">FOX</text>
+            <text x="72" y="24" font-family="'Arial Black',Arial,sans-serif" font-weight="900" font-size="17" fill="currentColor" letter-spacing="0.5">NEWS</text>
+          </svg>
+        </div>
+
+        <!-- CNN -->
+        <div class="logo-item">
+          <svg viewBox="0 0 72 32" height="30" xmlns="http://www.w3.org/2000/svg">
+            <text x="1" y="26" font-family="'Arial Black',Arial,sans-serif" font-weight="900" font-size="28" fill="#CC0000" letter-spacing="-1">CNN</text>
+          </svg>
+        </div>
+
+        <!-- CBS Eye -->
+        <div class="logo-item">
+          <svg viewBox="0 0 90 32" height="30" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16,2 C7.2,2 0,8.3 0,16 C0,23.7 7.2,30 16,30 C24.8,30 32,23.7 32,16 C32,8.3 24.8,2 16,2Z M16,6 C22.6,6 28,10.5 28,16 C28,21.5 22.6,26 16,26 C9.4,26 4,21.5 4,16 C4,10.5 9.4,6 16,6Z" fill="currentColor"/>
+            <ellipse cx="16" cy="16" rx="5.5" ry="5.5" fill="currentColor"/>
+            <text x="40" y="24" font-family="'Arial Black',Arial,sans-serif" font-weight="900" font-size="19" fill="currentColor" letter-spacing="0.5">CBS</text>
+          </svg>
+        </div>
+
+        <!-- New York Post -->
+        <div class="logo-item">
+          <svg viewBox="0 0 175 32" height="30" xmlns="http://www.w3.org/2000/svg">
+            <text x="0" y="13" font-family="Georgia,'Times New Roman',serif" font-weight="700" font-size="11" fill="currentColor" letter-spacing="2.5">NEW YORK</text>
+            <text x="0" y="30" font-family="Georgia,'Times New Roman',serif" font-weight="900" font-size="19" fill="currentColor" letter-spacing="1.5">POST</text>
+          </svg>
+        </div>
+
+        <!-- NewsRadio WFLA -->
+        <div class="logo-item">
+          <svg viewBox="0 0 120 32" height="30" xmlns="http://www.w3.org/2000/svg">
+            <text x="0" y="12" font-family="Arial,sans-serif" font-weight="700" font-size="8.5" fill="currentColor" letter-spacing="1.5">NEWSRADIO</text>
+            <text x="0" y="30" font-family="'Arial Black',Arial,sans-serif" font-weight="900" font-size="21" fill="currentColor" letter-spacing="0.5">WFLA</text>
+          </svg>
+        </div>
+
+        <!-- Telemundo -->
+        <div class="logo-item">
+          <svg viewBox="0 0 170 32" height="30" xmlns="http://www.w3.org/2000/svg">
+            <text x="0" y="24" font-family="'Arial Black',Arial,sans-serif" font-weight="900" font-size="19" fill="currentColor" letter-spacing="0.5">TELEMUNDO</text>
+          </svg>
+        </div>
+
+        <!-- Miami Herald -->
+        <div class="logo-item">
+          <svg viewBox="0 0 195 32" height="30" xmlns="http://www.w3.org/2000/svg">
+            <text x="0" y="13" font-family="Georgia,serif" font-weight="700" font-size="11" fill="currentColor" letter-spacing="2">THE MIAMI</text>
+            <text x="0" y="30" font-family="Georgia,serif" font-weight="900" font-size="19" fill="currentColor" letter-spacing="1">HERALD</text>
+          </svg>
+        </div>
+
+        <!-- duplicate set for seamless loop -->
+
+        <!-- NBC -->
+        <div class="logo-item">
+          <svg viewBox="0 0 96 32" height="30" xmlns="http://www.w3.org/2000/svg">
+            <g transform="translate(14,16)">
+              <path d="M0,0 C-3,-6 -5,-13 -1,-15 C3,-13 4,-6 0,0Z" fill="#E31837"/>
+              <path d="M0,0 C5,-5 10,-9 13,-6 C11,-2 6,1 0,0Z" fill="#F79421"/>
+              <path d="M0,0 C7,-1 13,2 12,6 C8,7 3,4 0,0Z" fill="#009A44"/>
+              <path d="M0,0 C5,5 7,11 4,14 C1,12 -1,7 0,0Z" fill="#0089CF"/>
+              <path d="M0,0 C-3,6 -7,11 -11,8 C-9,4 -5,1 0,0Z" fill="#6B2D8B"/>
+              <path d="M0,0 C-8,2 -13,-1 -12,-5 C-8,-6 -4,-3 0,0Z" fill="#C8102E"/>
+            </g>
+            <circle cx="14" cy="16" r="3.5" fill="rgba(255,255,255,0.15)"/>
+            <text x="33" y="22" font-family="'Arial Black',Arial,sans-serif" font-weight="900" font-size="16" fill="currentColor" letter-spacing="0.5">NBC</text>
+          </svg>
+        </div>
+
+        <!-- Fox News -->
+        <div class="logo-item">
+          <svg viewBox="0 0 138 32" height="30" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0" y="1" width="64" height="30" rx="3" fill="#003087"/>
+            <text x="7" y="23" font-family="'Arial Black',Arial,sans-serif" font-weight="900" font-size="19" fill="#fff" letter-spacing="1">FOX</text>
+            <text x="72" y="24" font-family="'Arial Black',Arial,sans-serif" font-weight="900" font-size="17" fill="currentColor" letter-spacing="0.5">NEWS</text>
+          </svg>
+        </div>
+
+        <!-- CNN -->
+        <div class="logo-item">
+          <svg viewBox="0 0 72 32" height="30" xmlns="http://www.w3.org/2000/svg">
+            <text x="1" y="26" font-family="'Arial Black',Arial,sans-serif" font-weight="900" font-size="28" fill="#CC0000" letter-spacing="-1">CNN</text>
+          </svg>
+        </div>
+
+        <!-- CBS Eye -->
+        <div class="logo-item">
+          <svg viewBox="0 0 90 32" height="30" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16,2 C7.2,2 0,8.3 0,16 C0,23.7 7.2,30 16,30 C24.8,30 32,23.7 32,16 C32,8.3 24.8,2 16,2Z M16,6 C22.6,6 28,10.5 28,16 C28,21.5 22.6,26 16,26 C9.4,26 4,21.5 4,16 C4,10.5 9.4,6 16,6Z" fill="currentColor"/>
+            <ellipse cx="16" cy="16" rx="5.5" ry="5.5" fill="currentColor"/>
+            <text x="40" y="24" font-family="'Arial Black',Arial,sans-serif" font-weight="900" font-size="19" fill="currentColor" letter-spacing="0.5">CBS</text>
+          </svg>
+        </div>
+
+        <!-- New York Post -->
+        <div class="logo-item">
+          <svg viewBox="0 0 175 32" height="30" xmlns="http://www.w3.org/2000/svg">
+            <text x="0" y="13" font-family="Georgia,'Times New Roman',serif" font-weight="700" font-size="11" fill="currentColor" letter-spacing="2.5">NEW YORK</text>
+            <text x="0" y="30" font-family="Georgia,'Times New Roman',serif" font-weight="900" font-size="19" fill="currentColor" letter-spacing="1.5">POST</text>
+          </svg>
+        </div>
+
+        <!-- NewsRadio WFLA -->
+        <div class="logo-item">
+          <svg viewBox="0 0 120 32" height="30" xmlns="http://www.w3.org/2000/svg">
+            <text x="0" y="12" font-family="Arial,sans-serif" font-weight="700" font-size="8.5" fill="currentColor" letter-spacing="1.5">NEWSRADIO</text>
+            <text x="0" y="30" font-family="'Arial Black',Arial,sans-serif" font-weight="900" font-size="21" fill="currentColor" letter-spacing="0.5">WFLA</text>
+          </svg>
+        </div>
+
+        <!-- Telemundo -->
+        <div class="logo-item">
+          <svg viewBox="0 0 170 32" height="30" xmlns="http://www.w3.org/2000/svg">
+            <text x="0" y="24" font-family="'Arial Black',Arial,sans-serif" font-weight="900" font-size="19" fill="currentColor" letter-spacing="0.5">TELEMUNDO</text>
+          </svg>
+        </div>
+
+        <!-- Miami Herald -->
+        <div class="logo-item">
+          <svg viewBox="0 0 195 32" height="30" xmlns="http://www.w3.org/2000/svg">
+            <text x="0" y="13" font-family="Georgia,serif" font-weight="700" font-size="11" fill="currentColor" letter-spacing="2">THE MIAMI</text>
+            <text x="0" y="30" font-family="Georgia,serif" font-weight="900" font-size="19" fill="currentColor" letter-spacing="1">HERALD</text>
+          </svg>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       TESTIMONIAL VIDEOS
+  ══════════════════════════════════════ -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">They Were Where You Are.<br /><span class="red">We Changed Their Lives.</span></h2>
+      </div>
+
+      <div class="testimonial-grid">
+
+        <!-- VIDEO CARD 1 FEATURED — Suzanne T. -->
+        <div class="testi-card featured">
+          <div class="video-thumb" data-video="assets/testi-2.mp4">
+            <div class="testi-video-wrap">
+              <video autoplay muted loop playsinline class="testi-vid-preview">
+                <source src="assets/testi-2.mp4" type="video/mp4" />
+              </video>
+              <div class="testi-vid-overlay"></div>
+              <div class="play-btn"><svg width="22" height="22" viewBox="0 0 24 24" fill="white"><polygon points="5,3 19,12 5,21"/></svg></div>
+            </div>
+          </div>
+          <div class="testi-content">
+            <div class="stars">★★★★★</div>
+            <blockquote>"Slip and fall left me with a broken hip. I thought I had no case. 305Injured investigated everything and proved the property owner was negligent. I never paid a cent upfront and walked away with a $450,000 settlement."</blockquote>
+            <div class="testi-author">
+              <div class="author-avatar av-coral">S</div>
+              <div>
+                <strong>Suzanne T.</strong>
+                <span>Slip &amp; Fall — Miami Beach</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- VIDEO CARD 2 — Maria R. -->
+        <div class="testi-card">
+          <div class="video-thumb" data-video="assets/testi-1.mp4">
+            <div class="testi-video-wrap">
+              <video autoplay muted loop playsinline class="testi-vid-preview">
+                <source src="assets/testi-1.mp4" type="video/mp4" />
+              </video>
+              <div class="testi-vid-overlay"></div>
+              <div class="play-btn small"><svg width="18" height="18" viewBox="0 0 24 24" fill="white"><polygon points="5,3 19,12 5,21"/></svg></div>
+            </div>
+          </div>
+          <div class="testi-content">
+            <div class="stars">★★★★★</div>
+            <blockquote>"305Injured answered at 11pm and fought until I got $1.2 million. I cried when they called."</blockquote>
+            <div class="testi-author">
+              <div class="author-avatar av-red">M</div>
+              <div>
+                <strong>Maria R.</strong>
+                <span>Car Accident — Hialeah, FL</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- VIDEO CARD 3 — Carmen V. -->
+        <div class="testi-card">
+          <div class="video-thumb" data-video="assets/testi-3.mp4">
+            <div class="testi-video-wrap">
+              <video autoplay muted loop playsinline class="testi-vid-preview">
+                <source src="assets/testi-3.mp4" type="video/mp4" />
+              </video>
+              <div class="testi-vid-overlay"></div>
+              <div class="play-btn small"><svg width="18" height="18" viewBox="0 0 24 24" fill="white"><polygon points="5,3 19,12 5,21"/></svg></div>
+            </div>
+          </div>
+          <div class="testi-content">
+            <div class="stars">★★★★★</div>
+            <blockquote>"305Injured nos trató como familia. No hablamos inglés y aun así ganamos $875,000."</blockquote>
+            <div class="testi-author">
+              <div class="author-avatar av-warm">C</div>
+              <div>
+                <strong>Carmen V.</strong>
+                <span>Pedestrian Accident — Little Havana</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PHOTO CARD 4 — David M. -->
+        <div class="testi-card">
+          <div class="testi-photo-thumb">
+            <img src="assets/david-m.png" alt="David M." class="testi-person-img" />
+            <div class="testi-vid-overlay"></div>
+            <div class="play-btn small"><svg width="18" height="18" viewBox="0 0 24 24" fill="white"><polygon points="5,3 19,12 5,21"/></svg></div>
+          </div>
+          <div class="testi-content">
+            <div class="stars">★★★★★</div>
+            <blockquote>"My employer said it was my fault. 305Injured proved otherwise — I won $600K and never paid a dime."</blockquote>
+            <div class="testi-author">
+              <div class="author-avatar av-rose">D</div>
+              <div>
+                <strong>David M.</strong>
+                <span>Workplace Injury — Doral, FL</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PHOTO CARD 5 — Ana G. -->
+        <div class="testi-card">
+          <div class="testi-photo-thumb">
+            <img src="assets/ana-g.png" alt="Ana G." class="testi-person-img" />
+            <div class="testi-vid-overlay"></div>
+            <div class="play-btn small"><svg width="18" height="18" viewBox="0 0 24 24" fill="white"><polygon points="5,3 19,12 5,21"/></svg></div>
+          </div>
+          <div class="testi-content">
+            <div class="stars">★★★★★</div>
+            <blockquote>"Hit by a drunk driver on my motorcycle. 305Injured handled everything. I got $720,000 — zero out of pocket."</blockquote>
+            <div class="testi-author">
+              <div class="author-avatar av-gold">A</div>
+              <div>
+                <strong>Ana G.</strong>
+                <span>Motorcycle Accident — Coral Gables</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="section-cta on-light">
+        <a href="#contact" class="btn btn-primary">Get Your Free Case Review &nbsp;→</a>
+        <a href="tel:+13055648733" class="btn-cta-phone">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11.5 19.79 19.79 0 01.12 2.82 2 2 0 012.11 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+          Call Us Now
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       EMPATHY BREAK
+  ══════════════════════════════════════ -->
+  <section class="empathy-break">
+    <div class="container">
+
+      <div class="section-header empathy-header">
+        <div class="section-tag">Why Clients Choose 305Injured</div>
+        <h2 class="section-title">When Everything Falls Apart,<br /><span class="red">We Hold the Line.</span></h2>
+        <p class="section-sub">Every injured Miami family deserves a relentless advocate — someone who shows up, fights back, and never quits.</p>
+      </div>
+
+      <div class="empathy-grid">
+
+        <div class="empathy-card">
+          <div class="empathy-card-num">01</div>
+          <div class="empathy-icon">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#CC0000" stroke-width="2.2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+          </div>
+          <h3>You Are Not Alone</h3>
+          <p>Every day, Miami families face the aftermath of accidents, medical errors, and negligence. You deserve someone truly in your corner — not a number in a file.</p>
+        </div>
+
+        <div class="empathy-card">
+          <div class="empathy-card-num">02</div>
+          <div class="empathy-icon">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#CC0000" stroke-width="2.2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>We Shield You From the System</h3>
+          <p>Insurance companies have armies of lawyers. We level the playing field — aggressively pursuing every dollar you deserve while you focus on what matters most.</p>
+        </div>
+
+        <div class="empathy-card">
+          <div class="empathy-card-num">03</div>
+          <div class="empathy-icon">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#CC0000" stroke-width="2.2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h3>Time Is Critical</h3>
+          <p>Evidence fades. Deadlines pass. The sooner we get involved, the stronger your case. Call now — our team is available 24/7, and there's no obligation.</p>
+        </div>
+
+      </div>
+
+      <div class="section-cta">
+        <a href="#contact" class="btn btn-hero-primary">See What Your Case Is Worth &nbsp;→</a>
+        <a href="tel:+13055648733" class="btn-cta-phone">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11.5 19.79 19.79 0 01.12 2.82 2 2 0 012.11 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+          Call Us Now
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       ATTORNEY SECTION — "Let Us Handle It"
+  ══════════════════════════════════════ -->
+  <section class="attorney-section" id="about">
+    <div class="container attorney-inner">
+
+      <div class="attorney-photo-wrap">
+        <div class="atty-team-wrap">
+          <img src="assets/attorneys-team.png" alt="The 305Injured Legal Team" class="atty-team-img" />
+        </div>
+      </div>
+
+      <div class="attorney-copy">
+        <div class="section-tag">The 305Injured Legal Team</div>
+        <h2 class="section-title attorney-title">
+          Let Us Carry<br />
+          <span class="red">The Weight For You.</span>
+        </h2>
+        <div class="attorney-quote-line"></div>
+        <p class="attorney-text large">
+          "When you're injured, the last thing you should be doing is fighting insurance companies or worrying about legal paperwork. That's our job — and we take it personally."
+        </p>
+        <p class="attorney-text">
+          20 years in Miami courtrooms fighting for people told they had no case. We answer the phone, explain every step, and don't stop until you get every dollar you're owed.
+        </p>
+        <div class="attorney-stats">
+          <div class="a-stat">
+            <span class="a-num">20+</span>
+            <span class="a-label">Years in Miami Courtrooms</span>
+          </div>
+          <div class="a-stat">
+            <span class="a-num">Top 1%</span>
+            <span class="a-label">FL Personal Injury Attorneys</span>
+          </div>
+          <div class="a-stat">
+            <span class="a-num">$200M+</span>
+            <span class="a-label">Recovered for Clients</span>
+          </div>
+        </div>
+        <a href="#contact" class="btn btn-primary attorney-btn">Get Your Free Case Review &nbsp;→</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       PRACTICE AREAS
+  ══════════════════════════════════════ -->
+  <section class="practice-areas">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">We Handle It All</div>
+        <h2 class="section-title">What Type of Injury<br /><span class="red">Can We Help You With?</span></h2>
+      </div>
+      <div class="areas-grid">
+        <a href="#contact" class="area-card">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#CC0000" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          <h4>Car Accidents</h4>
+        </a>
+        <a href="#contact" class="area-card">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#CC0000" stroke-width="1.5"><path d="M16 4h2a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/></svg>
+          <h4>Medical Malpractice</h4>
+        </a>
+        <a href="#contact" class="area-card">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#CC0000" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <h4>Slip & Fall</h4>
+        </a>
+        <a href="#contact" class="area-card">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#CC0000" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          <h4>Workplace Injury</h4>
+        </a>
+        <a href="#contact" class="area-card">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#CC0000" stroke-width="1.5"><path d="M18 8h1a4 4 0 010 8h-1"/><path d="M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+          <h4>Wrongful Death</h4>
+        </a>
+        <a href="#contact" class="area-card">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#CC0000" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          <h4>Motorcycle Accidents</h4>
+        </a>
+        <a href="#contact" class="area-card">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#CC0000" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          <h4>Truck Accidents</h4>
+        </a>
+        <a href="#contact" class="area-card">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#CC0000" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+          <h4>Pedestrian Accidents</h4>
+        </a>
+      </div>
+
+      <div class="section-cta on-light">
+        <a href="#contact" class="btn btn-primary">Get Your Free Case Review &nbsp;→</a>
+        <a href="tel:+13055648733" class="btn-cta-phone">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11.5 19.79 19.79 0 01.12 2.82 2 2 0 012.11 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+          Call Us Now
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       CONTACT / LEAD FORM
+  ══════════════════════════════════════ -->
+  <section class="contact-section" id="contact">
+    <div class="container contact-inner">
+      <div class="contact-copy">
+        <div class="section-tag light">Take the First Step</div>
+        <h2 class="contact-title">You've Been Through Enough.<br /><span>Let's Talk — For Free.</span></h2>
+        <p>No fees. No obligations. Just a real conversation about what happened, your rights, and how we can help. Available 24/7 in English and Spanish.</p>
+        <div class="contact-perks">
+          <div class="perk">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CC0000" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            Completely free consultation
+          </div>
+          <div class="perk">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CC0000" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            No fees unless we win your case
+          </div>
+          <div class="perk">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CC0000" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            Available 24/7 in English &amp; Spanish
+          </div>
+          <div class="perk">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CC0000" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            We come to you — home, hospital, anywhere
+          </div>
+        </div>
+        <a href="tel:+13055648733" class="phone-link">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11.5 19.79 19.79 0 01.12 2.82 2 2 0 012.11 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+          (305) 564-8733
+        </a>
+      </div>
+
+      <form class="contact-form" onsubmit="handleSubmit(event)">
+        <h3>Just Tell Us Your Story</h3>
+        <div class="form-row">
+          <div class="form-group">
+            <label>First Name</label>
+            <input type="text" placeholder="Maria" required />
+          </div>
+          <div class="form-group">
+            <label>Last Name</label>
+            <input type="text" placeholder="Rodriguez" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Phone Number</label>
+          <input type="tel" placeholder="(305) 564-8733" required />
+        </div>
+        <div class="form-group">
+          <label>Email Address</label>
+          <input type="email" placeholder="you@email.com" />
+        </div>
+        <div class="form-group">
+          <label>Type of Injury</label>
+          <select>
+            <option value="">Select one...</option>
+            <option>Car Accident</option>
+            <option>Slip & Fall</option>
+            <option>Workplace Injury</option>
+            <option>Medical Malpractice</option>
+            <option>Motorcycle Accident</option>
+            <option>Truck Accident</option>
+            <option>Wrongful Death</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Briefly Tell Us Your Story</label>
+          <textarea rows="4" placeholder="Tell us about your injury, when it happened, and any details you can share..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary full-width">
+          Start With a Free Call — No Obligation
+        </button>
+        <p class="form-disclaimer">By submitting, you agree to be contacted by our team. All information is 100% confidential.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#" class="logo footer-logo">
+          <span class="logo-305">305</span><span class="logo-injured">INJURED</span>
+        </a>
+        <p>Fighting for Miami's injured families since 2004. No fees unless we win.</p>
+        <a href="tel:+13055648733" class="footer-phone">(305) 564-8733</a>
+      </div>
+      <div class="footer-links">
+        <h5>Practice Areas</h5>
+        <a href="#contact">Car Accidents</a>
+        <a href="#contact">Slip & Fall</a>
+        <a href="#contact">Medical Malpractice</a>
+        <a href="#contact">Workplace Injury</a>
+        <a href="#contact">Wrongful Death</a>
+      </div>
+      <div class="footer-links">
+        <h5>Firm</h5>
+        <a href="#about">About Us</a>
+        <a href="#testimonials">Client Stories</a>
+        <a href="#contact">Contact</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+      <div class="footer-contact">
+        <h5>Office</h5>
+        <p><a href="https://maps.google.com/?q=10750+NW+6th+Ct+Suite+103+Miami+FL+33168" target="_blank" rel="noopener noreferrer" class="footer-address-link">10750 NW 6th Ct Suite 103<br />Miami, FL 33168</a></p>
+        <p>Available 24/7<br />English &amp; Spanish</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2026 305Injured. All rights reserved. Attorney advertising. Past results do not guarantee future outcomes. The information on this website is for general information purposes only and is not legal advice.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ══════════════════════════════════════
+       STICKY BOTTOM CTA (mobile)
+  ══════════════════════════════════════ -->
+  <div class="sticky-cta">
+    <a href="tel:+13055648733" class="sticky-call">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11.5 19.79 19.79 0 01.12 2.82 2 2 0 012.11 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+      Call Now
+    </a>
+    <a href="#contact" class="sticky-review">Free Case Review</a>
+  </div>
+
+  <!-- Modal overlay for video (optional) -->
+  <div class="video-modal" id="videoModal" onclick="closeModal()">
+    <div class="modal-inner" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal()">✕</button>
+      <video id="modalVideo" controls style="width:100%;border-radius:10px;display:none;"></video>
+      <div class="modal-video-placeholder" id="modalPlaceholder">
+        <div class="play-icon-lg">
+          <svg width="64" height="64" viewBox="0 0 24 24" fill="white"><polygon points="5,3 19,12 5,21"/></svg>
+        </div>
+        <p>Video testimonial loading…</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
