@@ -23,6 +23,8 @@
   --radius-lg: 18px;
   --shadow:    0 8px 40px rgba(0,0,0,0.18);
   --shadow-red:0 8px 40px rgba(204,0,0,0.25);
+  /* Was 24px; 50% reduction — edge of viewport to content */
+  --page-gutter: 12px;
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -43,7 +45,7 @@ img { max-width: 100%; display: block; }
 .container {
   max-width: 1160px;
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 0 var(--page-gutter);
 }
 
 .red { color: var(--red); }
@@ -62,7 +64,7 @@ img { max-width: 100%; display: block; }
 .nav-inner {
   max-width: 1160px;
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 0 var(--page-gutter);
   height: 64px;
   display: flex;
   align-items: center;
@@ -134,7 +136,7 @@ img { max-width: 100%; display: block; }
   max-width: 1160px;
   width: 100%;
   margin: 0 auto;
-  padding: 96px 24px 60px;
+  padding: 96px var(--page-gutter) 60px;
   text-align: left;
   animation: fadeUp 0.8s ease both;
 }
@@ -270,24 +272,6 @@ img { max-width: 100%; display: block; }
   animation: borderSpin 2.5s linear infinite;
   box-shadow: 0 6px 22px rgba(204,0,0,0.3);
   transform: translateY(-2px);
-}
-
-/* ── $0 Unless We Win — large PNG ── */
-.hero-fee-guarantee {
-  margin: 28px 0 8px;
-  max-width: 100%;
-}
-.hero-fee-img {
-  width: min(100%, 720px);
-  max-width: 100%;
-  height: auto;
-  display: block;
-  filter: drop-shadow(0 6px 28px rgba(0,0,0,0.45));
-}
-@media (min-width: 900px) {
-  .hero-fee-img {
-    width: min(100%, 820px);
-  }
 }
 
 /* ── Trust badges ── */
@@ -867,8 +851,8 @@ blockquote {
 .attorney-section::after { display: none; }
 .attorney-inner {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 48px 64px;
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+  gap: 40px 56px;
   align-items: center;
   position: relative;
   z-index: 2;
@@ -878,20 +862,21 @@ blockquote {
   align-self: center;
   display: flex;
   justify-content: center;
-  padding: 32px 0;
+  padding: 24px 0;
+  min-width: 0;
+}
+.attorney-copy {
+  min-width: 0;
 }
 
-/* ── Team composite (sunburst + attorneys in one asset) ── */
+/* ── Team photo: no card / no white box — sits on section bg ── */
 .atty-team-wrap {
   position: relative;
-  max-width: 520px;
+  max-width: min(100%, 580px);
   width: 100%;
   margin: 0 auto;
-  border-radius: 14px;
-  overflow: hidden;
-  box-shadow: 0 24px 56px rgba(0,0,0,0.12);
   line-height: 0;
-  background: var(--white);
+  background: transparent;
 }
 .atty-team-img {
   width: 100%;
@@ -1248,7 +1233,7 @@ blockquote {
 
 /* ── RESPONSIVE ──────────────────────────── */
 @media (max-width: 1024px) {
-  .attorney-inner { grid-template-columns: 1fr 1fr; gap: 40px; }
+  .attorney-inner { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 32px 40px; }
   .testimonial-grid { grid-template-columns: 1fr 1fr; }
   .testi-card.featured { grid-row: span 1; }
 }
@@ -1260,7 +1245,7 @@ blockquote {
   .empathy-card-num { font-size: 4.5rem; }
   .testimonial-grid { grid-template-columns: 1fr; }
   .attorney-inner { grid-template-columns: 1fr; }
-  .attorney-photo-wrap { max-width: 480px; margin: 0 auto; }
+  .attorney-photo-wrap { max-width: 100%; margin: 0 auto; }
   .areas-grid { grid-template-columns: repeat(2,1fr); }
   .contact-inner { grid-template-columns: 1fr; }
   .footer-inner { grid-template-columns: 1fr 1fr; }
